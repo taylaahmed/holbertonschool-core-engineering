@@ -2,7 +2,11 @@
 
 number = __import__('random').randint(-10000, 10000)
 
+
 digit = abs(number) % 10
+
+if number < 0:
+    digit = -digit
 
 if digit == 0:
     print(f"Last digit of {number} is {digit} and is 0")
