@@ -4,11 +4,13 @@ def pow(a, b):
     i = 0
     total = 1
     if b > 0:
-        while i < b:
+        for i in range(b):
             total *= a
-            i += 1
+
     else:
-        while i > b:
-            total /= a
-            i -= 1
+        for i in range(-b):
+            total *= a
+
+        total = 1 / total
+
     return total
