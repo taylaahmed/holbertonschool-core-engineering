@@ -14,4 +14,4 @@ def uppercase(str):
             new.append(letter)
 
     uppercase = "".join(new)
-    print(uppercase)
+    print("{}".format(uppercase))
