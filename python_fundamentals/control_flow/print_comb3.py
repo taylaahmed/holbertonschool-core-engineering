@@ -7,7 +7,7 @@ sep = ""
 while i < 100:
     j = 0
     unique = True
-    while j < i:
+    while j <= i:
         numComp = sorted("{:02d}".format(j))
         original = sorted("{:02d}".format(i))
 
