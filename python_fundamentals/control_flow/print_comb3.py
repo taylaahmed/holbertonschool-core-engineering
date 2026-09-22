@@ -10,7 +10,7 @@ while i < 100:
 
     if i == 0:
         unique = False
-    
+
     while j < i:
         numComp = sorted("{:02d}".format(j))
         original = sorted("{:02d}".format(i))
