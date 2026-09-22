@@ -4,5 +4,5 @@ i = 97
 
 while i >= 97 and i <= 122:
     if i != 101 and i != 113:
-        print(chr(i), end="")
+        print("{}".format(chr(i)), end="")
     i += 1
