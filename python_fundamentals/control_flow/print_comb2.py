@@ -10,3 +10,5 @@ while i < 100:
     sep = ", "
 
     i += 1
+
+print("\n", end="")
