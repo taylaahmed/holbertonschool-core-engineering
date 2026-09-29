@@ -6,7 +6,8 @@ def safe_print_list(my_list=[], x=0):
         try:
             print(f"{my_list[i]}", end="")
         except:
-            return x
+            print("")
+            return i
         i += 1
     print("")
-    return x
+    return i
