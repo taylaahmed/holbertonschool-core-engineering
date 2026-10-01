@@ -19,7 +19,7 @@ class Square:
         """Set position"""
         return self.__position
 
-    @size.setter
+    @position.setter
     def position(self, value):
         """Set the position of square"""
         if (not isinstance(value, tuple) or
@@ -30,7 +30,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-    @position.setter
+    @size.setter
     def size(self, value):
         """Set size of square"""
         if not type(value) is int:
