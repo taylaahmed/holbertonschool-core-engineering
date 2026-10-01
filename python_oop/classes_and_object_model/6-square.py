@@ -16,7 +16,7 @@ class Square:
 
     @property
     def position(self):
-        """Set position"""
+        """Return position"""
         return self.__position
 
     @position.setter
@@ -63,4 +63,4 @@ class Square:
             lines.append(" " * self.__position[0] +
                          "#" * self.__size)
 
-        return "\n".join(lines)
+        return "\n".join(lines) + "\n"
