@@ -7,4 +7,4 @@ def raise_exception():
         result = a + b
         print("{}".format(result))
     except (TypeError):
-        print("A type error occured")
+        print("Exception has been raised")
