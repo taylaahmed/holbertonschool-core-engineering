@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 def raise_exception():
-    a = "Hello"
+    a = "5"
+    b = 10
     try:
-        print("{:d}".format(a))
+        result = a + b
+        print("{}".format(result))
     except (TypeError):
         print("A type error occured")
