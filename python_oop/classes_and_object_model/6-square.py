@@ -30,7 +30,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-    @size.setter
+    @position.setter
     def size(self, value):
         """Set size of square"""
         if not type(value) is int:
