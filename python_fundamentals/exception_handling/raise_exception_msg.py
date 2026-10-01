@@ -2,6 +2,6 @@
 
 def raise_exception_msg(message=""):
     try:
-        print("{}".format(Message))
+        print("{}".format(message))
     except (NameError):
         print("Exception has been raised")
