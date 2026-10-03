@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-
 """Defines an empty Rectangle class."""\
+
 
 
 class Rectangle:
     """Represents a rectangle"""
-    def __init__(self, width=0, height = 0):
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """Return width"""
         return self.__width
-    
+
     @property
     def height(self):
         """Return height"""
@@ -34,4 +34,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
