@@ -10,9 +10,10 @@ async def homepage(request):
 
 async def websocket_endpoint(websocket):
     await websocket.accept()
+
     try:
         while True:
-            message = await websocket.recieve_text()
+            message = await websocket.receive_text()
             await websocket.send_text(message)
     except WebSocketDisconnect:
         pass
