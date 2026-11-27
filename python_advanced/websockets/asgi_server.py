@@ -5,8 +5,10 @@ from starlette.responses import HTMLResponse
 from starlette.routing import Route, WebSocketRoute
 from starlette.websockets import WebSocketDisconnect
 
+
 async def homepage(request):
     return HTMLResponse("<h1>WebSocket Echo</h1>")
+
 
 async def websocket_endpoint(websocket):
     await websocket.accept()
@@ -17,6 +19,7 @@ async def websocket_endpoint(websocket):
             await websocket.send_text(message)
     except WebSocketDisconnect:
         pass
+
 
 app = Starlette(routes=[
     Route("/", homepage),
